@@ -29,6 +29,7 @@ button.addEventListener("click", () => {
     attempts--;
 
     if (userGuess === randomNumber) {
+      s;
       gameContainer.style.display = "none";
       successContainer.style.visibility = "visible";
       successContainer.innerHTML = `<button id ="restart"  >Restart</button>
