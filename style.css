@@ -1,0 +1,168 @@
+:root {
+  --blue: #3c6fff;
+  --white: #ffffff;
+  --error-container-color: #ffcbcb;
+  --error-text-color: #ff5f59;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game_container {
+  height: auto;
+  width: 40%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 3rem;
+  padding: 2rem 2rem;
+  border-radius: 1.4rem;
+  box-shadow: 0.4rem 0.4rem rgb(30, 30, 30);
+  /* visibility: hidden; */
+}
+
+.question_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.question_container p {
+  font-size: 1.5rem;
+  color: rgb(52, 51, 51);
+  font-weight: 500;
+}
+.input_and_button_container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.9rem;
+}
+
+input {
+  width: 4.8rem;
+  height: 3.2rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  border: 1.5px solid rgb(174, 170, 170);
+}
+
+button {
+  width: 8rem;
+  height: 3.2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  background-color: var(--blue);
+  color: rgb(236, 233, 233);
+  box-shadow: 2px 2px gray;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #799cfb;
+}
+
+.number_of_guesses_container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.number_of_guesses_container p {
+  font-size: 1rem;
+  color: rgb(103, 96, 96);
+}
+
+.hint_container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: var(--error-container-color);
+  padding: 0.8rem;
+  visibility: hidden;
+}
+
+.hint_container p {
+  font-size: 1rem;
+  color: var(--error-text-color);
+}
+
+.success_container {
+  height: auto;
+  width: 40%;
+  background-color: var(--white);
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+  padding: 2rem 2rem;
+  border-radius: 1.4rem;
+  box-shadow: 0.4rem 0.4rem rgb(30, 30, 30);
+}
+
+.success_container button {
+  width: 8rem;
+  height: 3.2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  border: none;
+  outline: none;
+  background-color: var(--blue);
+  color: rgb(236, 233, 233);
+  box-shadow: 2px 2px gray;
+  cursor: pointer;
+}
+
+.success_container button:hover {
+  background-color: #799cfb;
+}
+
+.congratulation_conatiner {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: rgb(198, 255, 198);
+  padding: 0.8rem;
+}
+.congratulation_conatiner p {
+  font-size: 2rem;
+  color: rgb(36, 188, 36);
+}
+
+.error_conatiner {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: var(--error-container-color);
+  padding: 0.8rem;
+  color: var(--error-text-color);
+  font-size: 2rem;
+}
