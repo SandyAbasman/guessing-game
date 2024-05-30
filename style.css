@@ -173,7 +173,7 @@ button:hover {
 @media screen and (max-width: 991px) {
   .game_container,
   .success_container {
-    width: 100%;
+    width: 95%;
     height: auto;
   }
 }
