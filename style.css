@@ -33,6 +33,7 @@
   padding: 2rem 2rem;
   border-radius: 1.4rem;
   box-shadow: 0.4rem 0.4rem rgb(30, 30, 30);
+
   /* visibility: hidden; */
 }
 
@@ -44,6 +45,7 @@
   justify-content: start;
   align-items: center;
   row-gap: 1rem;
+  text-align: center;
 }
 
 .question_container p {
@@ -125,6 +127,7 @@ button:hover {
   padding: 2rem 2rem;
   border-radius: 1.4rem;
   box-shadow: 0.4rem 0.4rem rgb(30, 30, 30);
+  text-align: center;
 }
 
 .success_container button {
@@ -165,4 +168,19 @@ button:hover {
   padding: 0.8rem;
   color: var(--error-text-color);
   font-size: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .game_container,
+  .success_container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input_and_button_container {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 }
