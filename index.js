@@ -14,7 +14,7 @@ const restartButton = document.getElementById("restart");
 // check for empty field
 
 let randomNumber = Math.floor(Math.random() * 100) + 1;
-let attempts = 5;
+let attempts = 3;
 
 button.addEventListener("click", () => {
   const userGuess = Number(input.value);
